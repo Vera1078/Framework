@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('info') }}">О нас</a>
+        <a href="{{ url_for('contacts') }}">Контакты</a>
+    </nav>
+    <h1>Тестовая страница</h1>
+
+    {% block content %}{% endblock %}
+
+
+    <footer>
+        <div>
+            <p>Copyright © 2023 PDA. All Rights Reserved.</p>
+            <p>RU</p>
+        </div>
+    </footer>
+</body>
+</html>

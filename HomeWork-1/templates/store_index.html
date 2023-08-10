@@ -1,0 +1,12 @@
+{% extends "store.html"%}
+{% block content %}
+    <h1>Добро пожаловать на страницу!</h1>
+    <h2>Выберите категорию:</h2>
+    <ul>
+        {% for cat in category %}
+        <li>
+            <a href="{{ url_for(cat.func_name) }}">{{ cat.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
